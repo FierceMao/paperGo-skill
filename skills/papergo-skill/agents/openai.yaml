@@ -1,0 +1,7 @@
+interface:
+  display_name: "paperGo Skill"
+  short_description: "Reviewer-grade paper reproduction audits and protocol checks."
+  default_prompt: "Use $papergo-skill to audit this paper/repository, resolve datasets, check protocol coverage, and produce a reproduction plan."
+
+policy:
+  allow_implicit_invocation: true

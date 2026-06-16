@@ -2,7 +2,7 @@
 
 [English](README.md) | 中文
 
-`paperGo-skill` 是一个面向 Codex 的审稿级论文复现 skill。它帮助 agent 从论文和可选作者仓库出发，建立有来源依据的复现计划、数据集清单、缺失代码审计、实验协议覆盖检查和结果报告。
+`paperGo-skill` 是一个面向 Codex 的论文复现 skill。它帮助 agent 从论文本身，建立有来源依据的复现计划、数据收集、算法实现、实验验证等。
 
 本仓库参考 OpenAI skills 的组织方式：可安装的 skill 位于 `skills/papergo-skill/`，仓库根目录只放说明文档和项目元信息。
 

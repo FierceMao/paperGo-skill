@@ -6,8 +6,6 @@ English | [中文](README.zh-CN.md)
 
 Give Codex a paper, an author repository, or an experiment folder. This skill tells Codex how to check the paper's data, code, experiment protocol, and results before making any reproduction claim.
 
-In short: **paperGo helps Codex avoid saying "reproduced" too early.**
-
 ## Why Use It?
 
 Reproducing a paper is easy to get wrong:
@@ -116,13 +114,6 @@ Check whether results cover the paper protocol:
 ```bash
 python skills/papergo-skill/scripts/check_protocol_coverage.py protocol.json results.csv --format markdown
 ```
-
-## Important Notes
-
-- A runnable script is not the same as a reproduced paper.
-- Synthetic data checks are only mechanism checks unless the paper itself uses synthetic data.
-- Missing author code should only be rebuilt from paper evidence and caller context.
-- If data, splits, metrics, or outputs are missing, the report should say so clearly.
 
 ## License
 

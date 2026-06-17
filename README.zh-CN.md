@@ -6,8 +6,6 @@
 
 你给 Codex 一篇论文、作者代码仓库，或者一个实验文件夹。这个 skill 会提醒 Codex：先检查数据、代码、实验流程和结果证据，再判断能不能说“已经复现”。
 
-一句话：**paperGo 用来防止过早、过松地说论文已经复现。**
-
 ## 为什么需要它？
 
 论文复现很容易出问题：
@@ -15,7 +13,7 @@
 - 论文提到的数据集可能找不到；
 - 作者仓库可能缺文件、缺脚本；
 - 代码能跑，但不一定严格符合论文；
-- 只跑了合成小实验，却被误写成完整复现；
+- 只跑了合成小实验，无法实现完整的实验步骤；
 - 结果表可能用了不同划分、不同指标或不同随机种子。
 
 `paperGo-skill` 的作用就是把这些问题提前暴露出来。
@@ -116,13 +114,6 @@ python skills/papergo-skill/scripts/normalize_results.py <results.csv> --format 
 ```bash
 python skills/papergo-skill/scripts/check_protocol_coverage.py protocol.json results.csv --format markdown
 ```
-
-## 注意
-
-- 代码能跑，不等于论文已经复现。
-- 合成数据实验通常只能叫机制检查，除非论文原本就用合成数据。
-- 作者缺失的代码，只能根据论文证据和调用关系补。
-- 如果数据、划分、指标或输出证据不完整，报告里必须直接说明。
 
 ## 许可证
 
